@@ -159,7 +159,7 @@ CORS_ALLOWED_ORIGINS = [
     origin.strip()
     for origin in os.environ.get(
         "CORS_ALLOWED_ORIGINS",
-        "http://localhost:3000,http://127.0.0.1:3000,https://realcloudtech.vercel.app",
+        "http://localhost:3000,http://127.0.0.1:3000,https://realcloudtech.vercel.app,https://realcloudportback-production.up.railway.app",
     ).split(",")
     if origin.strip()
 ]
@@ -169,7 +169,7 @@ CSRF_TRUSTED_ORIGINS = [
     origin.strip()
     for origin in os.environ.get(
         "CSRF_TRUSTED_ORIGINS",
-        "http://localhost:3000,http://127.0.0.1:3000,https://realcloudtech.vercel.app",
+        "http://localhost:3000,http://127.0.0.1:3000,https://realcloudtech.vercel.app,https://realcloudportback-production.up.railway.app",
     ).split(",")
     if origin.strip()
 ]
